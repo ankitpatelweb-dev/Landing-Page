@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Therefore — functional, refined athleisure by two sisters and their mother.">
+  <title>Therefore — Athleisure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="/" class="site-header__logo" aria-label="Therefore home">Therefore</a>
+    <nav class="site-header__nav" aria-label="Primary">
+      <a href="#collection">Collection</a>
+      <a href="#story">Our Story</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__media" role="img" aria-label="Model in Therefore athleisure wear"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Women's athleisure</p>
+        <h1 id="hero-heading" class="hero__title">Therefore</h1>
+        <p class="hero__tagline">Movement, refined. Pieces that work as hard as you do — and look effortless doing it.</p>
+        <a href="#collection" class="btn btn--primary">Shop the collection</a>
+      </div>
+    </section>
+
+    <section id="collection" class="products" aria-labelledby="products-heading">
+      <div class="products__header" data-reveal="up">
+        <h2 id="products-heading" class="section-title">The collection</h2>
+        <p class="section-lead">Essentials designed for everyday motion.</p>
+      </div>
+      <ul class="products__grid">
+        <li class="product-card" data-reveal="up" data-reveal-delay="1">
+          <a href="#" class="product-card__link">
+            <div class="product-card__image" aria-hidden="true"></div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">Sculpt Legging</h3>
+              <p class="product-card__price">$98</p>
+            </div>
+          </a>
+        </li>
+        <li class="product-card" data-reveal="up" data-reveal-delay="2">
+          <a href="#" class="product-card__link">
+            <div class="product-card__image product-card__image--2" aria-hidden="true"></div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">Ease Tank</h3>
+              <p class="product-card__price">$58</p>
+            </div>
+          </a>
+        </li>
+        <li class="product-card" data-reveal="up" data-reveal-delay="3">
+          <a href="#" class="product-card__link">
+            <div class="product-card__image product-card__image--3" aria-hidden="true"></div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">Restore Hoodie</h3>
+              <p class="product-card__price">$128</p>
+            </div>
+          </a>
+        </li>
+        <li class="product-card" data-reveal="up" data-reveal-delay="4">
+          <a href="#" class="product-card__link">
+            <div class="product-card__image product-card__image--4" aria-hidden="true"></div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">Flow Short</h3>
+              <p class="product-card__price">$72</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="story" class="brand-strip" aria-labelledby="story-heading">
+      <div class="brand-strip__image" data-reveal="left" role="img" aria-label="The founders — two sisters and their mother"></div>
+      <div class="brand-strip__content" data-reveal="up">
+        <p class="brand-strip__eyebrow">Founder-led</p>
+        <h2 id="story-heading" class="section-title">Built by family, worn by everyone</h2>
+        <blockquote class="brand-strip__quote">
+          <p>Therefore started at our kitchen table — two sisters and our mother, stitching together what we couldn't find: athleisure that feels functional without looking like it tried too hard. Every piece is designed with intention, tested in real life, and made to last beyond a single season.</p>
+        </blockquote>
+        <p class="brand-strip__signoff">— The Therefore founders</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__top" data-reveal="up">
+      <nav class="site-footer__nav" aria-label="Footer">
+        <a href="#collection">Shop</a>
+        <a href="#story">Our Story</a>
+        <a href="#">Size Guide</a>
+        <a href="#">Contact</a>
+      </nav>
+      <form class="newsletter" action="#" method="post" aria-labelledby="newsletter-heading">
+        <h2 id="newsletter-heading" class="newsletter__title">Stay in the loop</h2>
+        <p class="newsletter__desc">New drops and founder notes, once a month.</p>
+        <div class="newsletter__field">
+          <label for="email" class="visually-hidden">Email address</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required autocomplete="email">
+          <button type="submit" class="btn btn--secondary">Subscribe</button>
+        </div>
+      </form>
+    </div>
+    <div class="site-footer__bottom">
+      <p class="site-footer__copy">&copy; 2026 Therefore. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
